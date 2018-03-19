@@ -33,6 +33,7 @@ public class CookieUtil {
         cookie.setDomain(COOKIE_DOMAIN);
         cookie.setPath("/");
         cookie.setHttpOnly(true);
+
         // 单位是秒，如不设置MaxAge，则Cookie不会存入硬盘，只会存入内存，即只在当前页有效。
         // 设置-1 表示有效期为永久
         cookie.setMaxAge(60*60*24*365);
